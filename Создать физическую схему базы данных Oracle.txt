@@ -1,0 +1,40 @@
+Скрипты создания БД. 
+
+1. Сущность ГТУ
+
+CREATE TABLE GTU 
+(
+name VARCHAR2(50) primary key, 
+description VARCHAR2(140), 
+ price NUMBER
+)  
+
+2. Сущность ГТД
+
+CREATE TABLE GTD
+ (
+name VARCHAR2(50) primary key,
+ description VARCHAR2(140),
+ views VARCHAR(140), 
+type VARCHAR(140), 
+price NUMBER
+)  
+
+3. Сущность  ГОТОВЫЕ МОДУЛИ
+
+CREATE TABLE modules
+(
+name VARCHAR2(50) primary key,
+ description VARCHAR2(140),
+ shelf life NUMBER,
+ price NUMBER
+) 
+
+4. Сущность ТРУБЫ
+
+CREATE TABLE tubing
+(
+numbertub NUMBER primary key, 
+connection VARCHAR2(140),
+ price NUMBER
+) 
